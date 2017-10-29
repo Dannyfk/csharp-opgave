@@ -1,0 +1,14 @@
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\CostumerWebpage\obj\Debug\CostumerWebpage.csprojResolveAssemblyReference.cache
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\CostumerWebpage\bin\CostumerWebpage.dll
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\CostumerWebpage\bin\CostumerWebpage.pdb
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\CostumerWebpage\bin\ClassLibrary.dll
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\CostumerWebpage\bin\ClassLibrary.pdb
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\CostumerWebpage\obj\Debug\CostumerWebpage.dll
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\CostumerWebpage\obj\Debug\CostumerWebpage.pdb
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\CostumerWebpage\bin\CostumerWebpage.dll
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\CostumerWebpage\bin\CostumerWebpage.pdb
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\CostumerWebpage\bin\ClassLibrary.dll
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\CostumerWebpage\bin\ClassLibrary.pdb
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\CostumerWebpage\obj\Debug\CostumerWebpage.csprojResolveAssemblyReference.cache
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\CostumerWebpage\obj\Debug\CostumerWebpage.dll
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\CostumerWebpage\obj\Debug\CostumerWebpage.pdb

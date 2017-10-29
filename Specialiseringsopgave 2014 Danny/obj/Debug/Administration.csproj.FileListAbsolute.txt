@@ -1,0 +1,51 @@
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\Specialiseringsopgave 2014 Danny.exe.config
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\Specialiseringsopgave 2014 Danny.exe
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\Specialiseringsopgave 2014 Danny.pdb
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Administration.csprojResolveAssemblyReference.cache
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\MainWindow.baml
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\MainWindow.g.cs
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\App.g.cs
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave 2014 Danny_MarkupCompile.cache
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave 2014 Danny.g.resources
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave_2014_Danny.Properties.Resources.resources
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Administration.csproj.GenerateResource.Cache
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave 2014 Danny.exe
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave 2014 Danny.pdb
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\VacationHomeWeeksWindow.baml
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\VacationHomeWeeksWindow.g.cs
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\ClassLibrary.dll
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\ClassLibrary.pdb
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\Specialiseringsopgave 2014 Danny.exe.config
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave 2014 Danny.exe
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave 2014 Danny.pdb
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\Specialiseringsopgave 2014 Danny.exe
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\Specialiseringsopgave 2014 Danny.pdb
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\ClassLibrary.dll
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\ClassLibrary.pdb
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Administration.csprojResolveAssemblyReference.cache
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\MainWindow.baml
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\VacationHomeWeeksWindow.baml
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\MainWindow.g.cs
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\VacationHomeWeeksWindow.g.cs
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\App.g.cs
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave 2014 Danny_MarkupCompile.cache
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave 2014 Danny.g.resources
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave_2014_Danny.Properties.Resources.resources
+G:\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Administration.csproj.GenerateResource.Cache
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\Specialiseringsopgave 2014 Danny.exe.config
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave 2014 Danny.exe
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave 2014 Danny.pdb
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\Specialiseringsopgave 2014 Danny.exe
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\Specialiseringsopgave 2014 Danny.pdb
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\ClassLibrary.dll
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\bin\Debug\ClassLibrary.pdb
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Administration.csprojResolveAssemblyReference.cache
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\MainWindow.baml
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\VacationHomeWeeksWindow.baml
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\MainWindow.g.cs
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\VacationHomeWeeksWindow.g.cs
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\App.g.cs
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave 2014 Danny_MarkupCompile.cache
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave 2014 Danny.g.resources
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Specialiseringsopgave_2014_Danny.Properties.Resources.resources
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\Specialiseringsopgave 2014 Danny\obj\Debug\Administration.csproj.GenerateResource.Cache

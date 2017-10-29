@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="vacationreservationModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="vacationreservationModelStoreContainer">
+          <EntitySet Name="airplanedestination" EntityType="vacationreservationModel.Store.airplanedestination" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="booking" EntityType="vacationreservationModel.Store.booking" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="costumer" EntityType="vacationreservationModel.Store.costumer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="destination" EntityType="vacationreservationModel.Store.destination" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="vacationhouse" EntityType="vacationreservationModel.Store.vacationhouse" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="vacationweek" EntityType="vacationreservationModel.Store.vacationweek" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__airplaned__desti__34B3CB38" Association="vacationreservationModel.Store.FK__airplaned__desti__34B3CB38">
+            <End Role="destination" EntitySet="destination" />
+            <End Role="airplanedestination" EntitySet="airplanedestination" />
+          </AssociationSet>
+          <AssociationSet Name="FK__booking__costume__4119A21D" Association="vacationreservationModel.Store.FK__booking__costume__4119A21D">
+            <End Role="costumer" EntitySet="costumer" />
+            <End Role="booking" EntitySet="booking" />
+          </AssociationSet>
+          <AssociationSet Name="FK__booking__vacatio__420DC656" Association="vacationreservationModel.Store.FK__booking__vacatio__420DC656">
+            <End Role="vacationhouse" EntitySet="vacationhouse" />
+            <End Role="booking" EntitySet="booking" />
+          </AssociationSet>
+          <AssociationSet Name="FK__vacationh__desti__39788055" Association="vacationreservationModel.Store.FK__vacationh__desti__39788055">
+            <End Role="destination" EntitySet="destination" />
+            <End Role="vacationhouse" EntitySet="vacationhouse" />
+          </AssociationSet>
+          <AssociationSet Name="FK__vacationw__vacat__3C54ED00" Association="vacationreservationModel.Store.FK__vacationw__vacat__3C54ED00">
+            <End Role="vacationhouse" EntitySet="vacationhouse" />
+            <End Role="vacationweek" EntitySet="vacationweek" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="airplanedestination">
+          <Key>
+            <PropertyRef Name="weeknumber" />
+            <PropertyRef Name="destination" />
+          </Key>
+          <Property Name="weeknumber" Type="int" Nullable="false" />
+          <Property Name="todestination" Type="int" />
+          <Property Name="fromdestination" Type="int" />
+          <Property Name="destination" Type="varchar" Nullable="false" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="booking">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="numberofpeople" Type="int" />
+          <Property Name="startweek" Type="int" />
+          <Property Name="price" Type="int" />
+          <Property Name="costumer" Type="varchar" MaxLength="40" />
+          <Property Name="vacationhouse" Type="int" />
+        </EntityType>
+        <EntityType Name="costumer">
+          <Key>
+            <PropertyRef Name="email" />
+          </Key>
+          <Property Name="name" Type="varchar" MaxLength="40" />
+          <Property Name="email" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="password" Type="varchar" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="destination">
+          <Key>
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="dayofchange" Type="varchar" MaxLength="8" />
+          <Property Name="priceprperson" Type="int" />
+        </EntityType>
+        <EntityType Name="vacationhouse">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="description" Type="varchar" MaxLength="400" />
+          <Property Name="maxpersons" Type="int" />
+          <Property Name="distancetoshopping" Type="int" />
+          <Property Name="distancetobeach" Type="int" />
+          <Property Name="destination" Type="varchar" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="vacationweek">
+          <Key>
+            <PropertyRef Name="weeknumber" />
+            <PropertyRef Name="vacationhouseid" />
+          </Key>
+          <Property Name="weeknumber" Type="int" Nullable="false" />
+          <Property Name="price" Type="int" />
+          <Property Name="isBooked" Type="bit" />
+          <Property Name="vacationhouseid" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__airplaned__desti__34B3CB38">
+          <End Role="destination" Type="vacationreservationModel.Store.destination" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="airplanedestination" Type="vacationreservationModel.Store.airplanedestination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="destination">
+              <PropertyRef Name="name" />
+            </Principal>
+            <Dependent Role="airplanedestination">
+              <PropertyRef Name="destination" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__booking__costume__4119A21D">
+          <End Role="costumer" Type="vacationreservationModel.Store.costumer" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="booking" Type="vacationreservationModel.Store.booking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="costumer">
+              <PropertyRef Name="email" />
+            </Principal>
+            <Dependent Role="booking">
+              <PropertyRef Name="costumer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__booking__vacatio__420DC656">
+          <End Role="vacationhouse" Type="vacationreservationModel.Store.vacationhouse" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="booking" Type="vacationreservationModel.Store.booking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="vacationhouse">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="booking">
+              <PropertyRef Name="vacationhouse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__vacationh__desti__39788055">
+          <End Role="destination" Type="vacationreservationModel.Store.destination" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="vacationhouse" Type="vacationreservationModel.Store.vacationhouse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="destination">
+              <PropertyRef Name="name" />
+            </Principal>
+            <Dependent Role="vacationhouse">
+              <PropertyRef Name="destination" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__vacationw__vacat__3C54ED00">
+          <End Role="vacationhouse" Type="vacationreservationModel.Store.vacationhouse" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="vacationweek" Type="vacationreservationModel.Store.vacationweek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="vacationhouse">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="vacationweek">
+              <PropertyRef Name="vacationhouseid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="vacationreservationModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="LinqEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="airplanedestinations" EntityType="vacationreservationModel.airplanedestination" />
+          <EntitySet Name="bookings" EntityType="vacationreservationModel.booking" />
+          <EntitySet Name="costumers" EntityType="vacationreservationModel.costumer" />
+          <EntitySet Name="destinations" EntityType="vacationreservationModel.destination" />
+          <EntitySet Name="vacationhouses" EntityType="vacationreservationModel.vacationhouse" />
+          <EntitySet Name="vacationweeks" EntityType="vacationreservationModel.vacationweek" />
+          <AssociationSet Name="FK__airplaned__desti__34B3CB38" Association="vacationreservationModel.FK__airplaned__desti__34B3CB38">
+            <End Role="destination" EntitySet="destinations" />
+            <End Role="airplanedestination" EntitySet="airplanedestinations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__booking__costume__4119A21D" Association="vacationreservationModel.FK__booking__costume__4119A21D">
+            <End Role="costumer" EntitySet="costumers" />
+            <End Role="booking" EntitySet="bookings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__booking__vacatio__420DC656" Association="vacationreservationModel.FK__booking__vacatio__420DC656">
+            <End Role="vacationhouse" EntitySet="vacationhouses" />
+            <End Role="booking" EntitySet="bookings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__vacationh__desti__39788055" Association="vacationreservationModel.FK__vacationh__desti__39788055">
+            <End Role="destination" EntitySet="destinations" />
+            <End Role="vacationhouse" EntitySet="vacationhouses" />
+          </AssociationSet>
+          <AssociationSet Name="FK__vacationw__vacat__3C54ED00" Association="vacationreservationModel.FK__vacationw__vacat__3C54ED00">
+            <End Role="vacationhouse" EntitySet="vacationhouses" />
+            <End Role="vacationweek" EntitySet="vacationweeks" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="airplanedestination">
+          <Key>
+            <PropertyRef Name="weeknumber" />
+            <PropertyRef Name="destination" />
+          </Key>
+          <Property Name="weeknumber" Type="Int32" Nullable="false" />
+          <Property Name="todestination" Type="Int32" />
+          <Property Name="fromdestination" Type="Int32" />
+          <Property Name="destination" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="destination1" Relationship="vacationreservationModel.FK__airplaned__desti__34B3CB38" FromRole="airplanedestination" ToRole="destination" />
+        </EntityType>
+        <EntityType Name="booking">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="numberofpeople" Type="Int32" />
+          <Property Name="startweek" Type="Int32" />
+          <Property Name="price" Type="Int32" />
+          <Property Name="costumer" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="vacationhouse" Type="Int32" />
+          <NavigationProperty Name="costumer1" Relationship="vacationreservationModel.FK__booking__costume__4119A21D" FromRole="booking" ToRole="costumer" />
+          <NavigationProperty Name="vacationhouse1" Relationship="vacationreservationModel.FK__booking__vacatio__420DC656" FromRole="booking" ToRole="vacationhouse" />
+        </EntityType>
+        <EntityType Name="costumer">
+          <Key>
+            <PropertyRef Name="email" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="email" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="password" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="bookings" Relationship="vacationreservationModel.FK__booking__costume__4119A21D" FromRole="costumer" ToRole="booking" />
+        </EntityType>
+        <EntityType Name="destination">
+          <Key>
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="dayofchange" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="priceprperson" Type="Int32" />
+          <NavigationProperty Name="airplanedestinations" Relationship="vacationreservationModel.FK__airplaned__desti__34B3CB38" FromRole="destination" ToRole="airplanedestination" />
+          <NavigationProperty Name="vacationhouses" Relationship="vacationreservationModel.FK__vacationh__desti__39788055" FromRole="destination" ToRole="vacationhouse" />
+        </EntityType>
+        <EntityType Name="vacationhouse">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="description" Type="String" MaxLength="400" Unicode="false" FixedLength="false" />
+          <Property Name="maxpersons" Type="Int32" />
+          <Property Name="distancetoshopping" Type="Int32" />
+          <Property Name="distancetobeach" Type="Int32" />
+          <Property Name="destination" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="bookings" Relationship="vacationreservationModel.FK__booking__vacatio__420DC656" FromRole="vacationhouse" ToRole="booking" />
+          <NavigationProperty Name="destination1" Relationship="vacationreservationModel.FK__vacationh__desti__39788055" FromRole="vacationhouse" ToRole="destination" />
+          <NavigationProperty Name="vacationweeks" Relationship="vacationreservationModel.FK__vacationw__vacat__3C54ED00" FromRole="vacationhouse" ToRole="vacationweek" />
+        </EntityType>
+        <EntityType Name="vacationweek">
+          <Key>
+            <PropertyRef Name="weeknumber" />
+            <PropertyRef Name="vacationhouseid" />
+          </Key>
+          <Property Name="weeknumber" Type="Int32" Nullable="false" />
+          <Property Name="price" Type="Int32" />
+          <Property Name="isBooked" Type="Boolean" />
+          <Property Name="vacationhouseid" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="vacationhouse" Relationship="vacationreservationModel.FK__vacationw__vacat__3C54ED00" FromRole="vacationweek" ToRole="vacationhouse" />
+        </EntityType>
+        <Association Name="FK__airplaned__desti__34B3CB38">
+          <End Role="destination" Type="vacationreservationModel.destination" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="airplanedestination" Type="vacationreservationModel.airplanedestination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="destination">
+              <PropertyRef Name="name" />
+            </Principal>
+            <Dependent Role="airplanedestination">
+              <PropertyRef Name="destination" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__booking__costume__4119A21D">
+          <End Role="costumer" Type="vacationreservationModel.costumer" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="booking" Type="vacationreservationModel.booking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="costumer">
+              <PropertyRef Name="email" />
+            </Principal>
+            <Dependent Role="booking">
+              <PropertyRef Name="costumer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__booking__vacatio__420DC656">
+          <End Role="vacationhouse" Type="vacationreservationModel.vacationhouse" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="booking" Type="vacationreservationModel.booking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="vacationhouse">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="booking">
+              <PropertyRef Name="vacationhouse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__vacationh__desti__39788055">
+          <End Role="destination" Type="vacationreservationModel.destination" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="vacationhouse" Type="vacationreservationModel.vacationhouse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="destination">
+              <PropertyRef Name="name" />
+            </Principal>
+            <Dependent Role="vacationhouse">
+              <PropertyRef Name="destination" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__vacationw__vacat__3C54ED00">
+          <End Role="vacationhouse" Type="vacationreservationModel.vacationhouse" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="vacationweek" Type="vacationreservationModel.vacationweek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="vacationhouse">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="vacationweek">
+              <PropertyRef Name="vacationhouseid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="vacationreservationModelStoreContainer" CdmEntityContainer="LinqEntities">
+          <EntitySetMapping Name="airplanedestinations">
+            <EntityTypeMapping TypeName="vacationreservationModel.airplanedestination">
+              <MappingFragment StoreEntitySet="airplanedestination">
+                <ScalarProperty Name="weeknumber" ColumnName="weeknumber" />
+                <ScalarProperty Name="todestination" ColumnName="todestination" />
+                <ScalarProperty Name="fromdestination" ColumnName="fromdestination" />
+                <ScalarProperty Name="destination" ColumnName="destination" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="bookings">
+            <EntityTypeMapping TypeName="vacationreservationModel.booking">
+              <MappingFragment StoreEntitySet="booking">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="numberofpeople" ColumnName="numberofpeople" />
+                <ScalarProperty Name="startweek" ColumnName="startweek" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="costumer" ColumnName="costumer" />
+                <ScalarProperty Name="vacationhouse" ColumnName="vacationhouse" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="costumers">
+            <EntityTypeMapping TypeName="vacationreservationModel.costumer">
+              <MappingFragment StoreEntitySet="costumer">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="destinations">
+            <EntityTypeMapping TypeName="vacationreservationModel.destination">
+              <MappingFragment StoreEntitySet="destination">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="dayofchange" ColumnName="dayofchange" />
+                <ScalarProperty Name="priceprperson" ColumnName="priceprperson" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vacationhouses">
+            <EntityTypeMapping TypeName="vacationreservationModel.vacationhouse">
+              <MappingFragment StoreEntitySet="vacationhouse">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="maxpersons" ColumnName="maxpersons" />
+                <ScalarProperty Name="distancetoshopping" ColumnName="distancetoshopping" />
+                <ScalarProperty Name="distancetobeach" ColumnName="distancetobeach" />
+                <ScalarProperty Name="destination" ColumnName="destination" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vacationweeks">
+            <EntityTypeMapping TypeName="vacationreservationModel.vacationweek">
+              <MappingFragment StoreEntitySet="vacationweek">
+                <ScalarProperty Name="weeknumber" ColumnName="weeknumber" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="isBooked" ColumnName="isBooked" />
+                <ScalarProperty Name="vacationhouseid" ColumnName="vacationhouseid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

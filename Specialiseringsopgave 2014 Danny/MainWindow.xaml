@@ -1,0 +1,39 @@
+﻿<Window x:Class="Specialiseringsopgave_2014_Danny.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="480" Width="630" Loaded="Window_Loaded_1">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="tBoxName" HorizontalAlignment="Left" Height="23" Margin="168,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <Label x:Name="lblName" Content="Name of destination" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDay" Content="Day of change" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPrice" Content="Price pr. person" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tBoxDay" HorizontalAlignment="Left" Height="23" Margin="168,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="tBoxPrice" HorizontalAlignment="Left" Height="23" Margin="168,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <Label x:Name="lblCreate" Content="Destination" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dGridDestinations" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="10,223,0,0" VerticalAlignment="Top" Height="170" Width="276" SelectedCellsChanged="dataGrid1_SelectedCellsChanged" IsReadOnly="True"/>
+        <Button x:Name="btnCreateDestination" Content="Create destination" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" Width="118" Click="btnCreateDestination_Click"/>
+        <Button x:Name="btnDeleteDestination" Content="Delete destination" HorizontalAlignment="Left" Margin="10,398,0,0" VerticalAlignment="Top" Width="118" Click="btnDeleteDestination_Click"/>
+        <Button x:Name="btnUpdateDestination" Content="Update destination" HorizontalAlignment="Left" Margin="168,140,0,0" VerticalAlignment="Top" Width="118" Click="btnUpdateDestination_Click"/>
+        <Label x:Name="lblHome" Content="Vacation home" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPersons" Content="Max number of persons" Grid.Column="1" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tBoxPersons" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="218,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <Label x:Name="lblShopping" Content="Distance to shopping" Grid.Column="1" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblBeach" Content="Distance to beach" Grid.Column="1" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDescription" Content="Description" Grid.Column="1" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tBoxShopping" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="218,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <TextBox x:Name="tBoxBeach" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="218,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <TextBox x:Name="tBoxDescription" Grid.Column="1" HorizontalAlignment="Left" Height="46
+                 " Margin="151,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
+        <Button x:Name="btnUpdateHouse" Content="Update vacation house" Grid.Column="1" HorizontalAlignment="Left" Margin="151,189,0,0" VerticalAlignment="Top" Width="135" RenderTransformOrigin="0.5,0.5" Click="btnUpdateHouse_Click"/>
+        <Button x:Name="btnCreateHouse" Content="Create vacation house" Grid.Column="1" HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top" Width="123" Click="btnCreateHouse_Click"/>
+        <Button x:Name="btnDeleteHouse" Content="Delete vacation house" Grid.Column="1" HorizontalAlignment="Left" Margin="10,398,0,0" VerticalAlignment="Top" Width="123" Click="btnDeleteHouse_Click"/>
+        <DataGrid x:Name="dGridVacation" ItemsSource="{Binding}" Grid.Column="1" HorizontalAlignment="Left" Margin="10,223,0,0" VerticalAlignment="Top" Height="170" Width="276" SelectedCellsChanged="dGridVacation_SelectedCellsChanged" IsReadOnly="True"/>
+        <Label x:Name="lblDestinationError" Content="" HorizontalAlignment="Left" Margin="168,10,0,0" VerticalAlignment="Top" Width="133" Visibility="Hidden"/>
+        <Label x:Name="lblVacationError" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="105,10,0,0" VerticalAlignment="Top" Width="206" Visibility="Hidden"/>
+        <Button x:Name="btnUpdateWeeks" Content="Update house weeks" Grid.Column="1" HorizontalAlignment="Left" Margin="165,398,0,0" VerticalAlignment="Top" Width="121" Click="btnUpdateWeeks_Click"/>
+    </Grid>
+</Window>

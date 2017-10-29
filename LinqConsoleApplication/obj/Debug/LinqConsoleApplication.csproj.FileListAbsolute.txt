@@ -1,0 +1,21 @@
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\bin\Debug\LinqConsoleApplication.exe.config
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\bin\Debug\LinqConsoleApplication.exe
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\bin\Debug\LinqConsoleApplication.pdb
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\bin\Debug\EntityFramework.dll
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\bin\Debug\EntityFramework.xml
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\obj\Debug\LinqConsoleApplication.csprojResolveAssemblyReference.cache
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\obj\Debug\LinqConsoleApplication.exe
+C:\Users\Danny\Documents\Visual Studio 2012\Projects\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\obj\Debug\LinqConsoleApplication.pdb
+G:\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\bin\Debug\LinqConsoleApplication.exe.config
+G:\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\obj\Debug\LinqConsoleApplication.exe
+G:\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\obj\Debug\LinqConsoleApplication.pdb
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\bin\Debug\LinqConsoleApplication.exe.config
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\obj\Debug\LinqConsoleApplication.exe
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\obj\Debug\LinqConsoleApplication.pdb
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\bin\Debug\LinqConsoleApplication.exe
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\bin\Debug\LinqConsoleApplication.pdb
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\bin\Debug\ClassLibrary.dll
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\bin\Debug\EntityFramework.dll
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\bin\Debug\ClassLibrary.pdb
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\bin\Debug\EntityFramework.xml
+C:\Users\Danny\Desktop\specialiseringsproject 2014\Specialiseringsopgave 2014 Danny\LinqConsoleApplication\obj\Debug\LinqConsoleApplication.csprojResolveAssemblyReference.cache

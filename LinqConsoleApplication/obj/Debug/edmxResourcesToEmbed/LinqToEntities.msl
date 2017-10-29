@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="vacationreservationModelStoreContainer" CdmEntityContainer="LinqEntities">
+    <EntitySetMapping Name="airplanedestinations">
+      <EntityTypeMapping TypeName="vacationreservationModel.airplanedestination">
+        <MappingFragment StoreEntitySet="airplanedestination">
+          <ScalarProperty Name="weeknumber" ColumnName="weeknumber" />
+          <ScalarProperty Name="todestination" ColumnName="todestination" />
+          <ScalarProperty Name="fromdestination" ColumnName="fromdestination" />
+          <ScalarProperty Name="destination" ColumnName="destination" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bookings">
+      <EntityTypeMapping TypeName="vacationreservationModel.booking">
+        <MappingFragment StoreEntitySet="booking">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="numberofpeople" ColumnName="numberofpeople" />
+          <ScalarProperty Name="startweek" ColumnName="startweek" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="costumer" ColumnName="costumer" />
+          <ScalarProperty Name="vacationhouse" ColumnName="vacationhouse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="costumers">
+      <EntityTypeMapping TypeName="vacationreservationModel.costumer">
+        <MappingFragment StoreEntitySet="costumer">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="destinations">
+      <EntityTypeMapping TypeName="vacationreservationModel.destination">
+        <MappingFragment StoreEntitySet="destination">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="dayofchange" ColumnName="dayofchange" />
+          <ScalarProperty Name="priceprperson" ColumnName="priceprperson" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vacationhouses">
+      <EntityTypeMapping TypeName="vacationreservationModel.vacationhouse">
+        <MappingFragment StoreEntitySet="vacationhouse">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="maxpersons" ColumnName="maxpersons" />
+          <ScalarProperty Name="distancetoshopping" ColumnName="distancetoshopping" />
+          <ScalarProperty Name="distancetobeach" ColumnName="distancetobeach" />
+          <ScalarProperty Name="destination" ColumnName="destination" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vacationweeks">
+      <EntityTypeMapping TypeName="vacationreservationModel.vacationweek">
+        <MappingFragment StoreEntitySet="vacationweek">
+          <ScalarProperty Name="weeknumber" ColumnName="weeknumber" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="isBooked" ColumnName="isBooked" />
+          <ScalarProperty Name="vacationhouseid" ColumnName="vacationhouseid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
